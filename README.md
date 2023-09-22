@@ -1,5 +1,5 @@
 # SMSChatBot
-This zip folder allows you to respond to a text message using Twilio's API. The intended use is to make an SMS-enabled chatbot, as outlined in my Medium blog post.
+This zip folder allows you to respond to a text message using Twilio's API. The intended use is to make an SMS-enabled chatbot, as outlined in my Medium blog post at https://tom-w-smith.medium.com/sms-enabled-ai-chatbot-tutorial-81983a19f80c .
 The lambda_handler.py within looks like this:
 
 ```
