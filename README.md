@@ -2,7 +2,7 @@
 This code allows you to respond to a text message using Twilio's API. The intended use is to make an SMS-enabled chatbot, as outlined in my Medium blog post.
 The code looks like this:
 
-# Begin Code
+```
 import os
 import io
 import boto3
@@ -12,7 +12,6 @@ from urllib import parse
 import re
 from twilio.rest import Client
 
-TWILIO_SMS_URL = "https://api.twilio.com/2010-04-01/Accounts/{}/Messages.json"
 TWILIO_ACCOUNT_SID = os.environ.get("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH_TOKEN = os.environ.get("TWILIO_AUTH_TOKEN")
 FROM_NUMBER= os.environ.get("FROM_NUMBER")
@@ -81,4 +80,4 @@ def lambda_handler(event, context):
      )
     
     return (message.sid)
-
+```
